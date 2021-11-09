@@ -45,9 +45,9 @@ jobs:
     - name: Run test suite
       run: composer install --no-progress
       env:
-        DB_CONNECTION=${{ matrix.database.laravelConnection }}
-        DB_HOST=${{ env.SS_DATABASE_SERVER }}
-        DB_PORT=${{ env.SS_DATABASE_PORT }}
-        DB_DATABASE=${{ env.SS_DATABASE_NAME }}
-        DB_USERNAME=${{ env.SS_DATABASE_USERNAME }}
-        DB_PASSWORD=${{ env.SS_DATABASE_PASSWORD }}
+        DB_CONNECTION: ${{ matrix.database.laravelConnection }}
+        DB_HOST: ${{ env.SS_DATABASE_SERVER }}
+        DB_PORT: ${{ env.SS_DATABASE_PORT }}
+        DB_DATABASE: ${{ env.SS_DATABASE_NAME }}
+        DB_USERNAME: ${{ env.SS_DATABASE_USERNAME }}
+        DB_PASSWORD: ${{ env.SS_DATABASE_PASSWORD }}
