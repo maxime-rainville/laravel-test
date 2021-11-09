@@ -43,7 +43,7 @@ jobs:
       with:
         driver: ${{ matrix.database.driver }}
         version: ${{ matrix.database.version }}
-        installPackage: false
+        installPackage: 0
 
     - name: Run test suite
       run: composer install --no-progress
